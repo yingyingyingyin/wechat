@@ -1,0 +1,44 @@
+/**index.wxss**/
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.subjectImg {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  margin-top: 2px;
+}
+
+.subjectImg image {
+  width: 100%;
+  height: 100%;
+}
+
+.subjectText {
+  display: block;
+  position: absolute;
+  float: left;
+  left: 40px;
+  top: 13px;
+  color: blue;
+}
+
+.subject {
+  display: flex;
+  width:100%;
+  height: 30px;
+  justify-content: space-between;
+}
+.mathImg{
+  width:40rpx;
+  height:30rpx;
+}

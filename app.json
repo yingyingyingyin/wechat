@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/self/self"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20B2AA",
+    "navigationBarTitleText": "小学教育",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "img/首页.png",
+        "iconPath": "img/首页.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+        {
+          "selectedIconPath": "img/分类.png",
+          "iconPath": "img/分类.png",
+          "pagePath": "pages/logs/logs",
+          "text": "商城"
+        },
+      {
+        "selectedIconPath": "img/user.png",
+        "iconPath": "img/user.png",
+        "pagePath": "pages/self/self",
+        "text": "个人中心"
+      }
+    
+    ]
+  }
+}
