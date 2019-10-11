@@ -119,6 +119,8 @@
     danmu-list="{{danmuList}}" enable-danmu danmu-btn controls></video>
 </view>
 <!--名师推荐-->
- <view class="teacher_re" wx:for="{{teacher_arry}}">
-    <image src="item.url" class="teacher_img"></image>
+<view style="display:flex">
+ <view class="teacher_re" wx:for="{{teacher_array}}">
+    <image src="{{item.url}}" class="teacher_img"></image>
+  </view>
   </view>

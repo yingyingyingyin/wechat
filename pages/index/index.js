@@ -47,13 +47,14 @@ Page({
         time: 3
       }
     ],
+    
 
-
-    teacher_array: [{
-      url: 'https://www.16pic.com/pic/pic_8994927.html'
+    teacher_array: [,
+      {
+        url: 'http://img95.699pic.com/photo/40006/5560.jpg_wh300.jpg'
       },
       {
-        url:'https://img.16pic.com/00/89/94/16pic_8994927_s.jpg'
+        url: 'http://img95.699pic.com/photo/40006/8333.jpg_wh300.jpg'
       }
     ]
   },
