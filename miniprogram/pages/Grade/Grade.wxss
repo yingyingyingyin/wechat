@@ -1,0 +1,42 @@
+/* miniprogram/pages/oneGrade/oneGrade.wxss */
+
+.oneGrade_img {
+  width: 100%;
+  height: 300rpx;
+}
+
+.swiper_all {
+  display: flex;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #ccc;
+  text-align: center;
+  height: 88rpx;
+  line-height: 88rpx;
+  font-weight: bold;
+}
+
+.swiper-tab-item {
+  display: inline-block;
+  width: 33.33%;
+  color: rgb(121, 177, 245);
+}
+
+.swiper1 {
+  width: 100%;
+  height: 650rpx; /*列表高度*/
+  margin-top: 40rpx;
+}
+
+.active {
+  color: rgb(252, 151, 18);
+  border-bottom: 4rpx solid rgb(252, 151, 18);
+}
+
+.oneGrade_List {
+  margin-top: 50rpx;
+  width: 100%;
+  height: 100%;
+}

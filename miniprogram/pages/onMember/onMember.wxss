@@ -1,0 +1,32 @@
+/* miniprogram/pages/onMember/onMember.wxss */
+
+.container {
+  padding: 10px;
+  margin: 0px;
+  align-items: start;
+}
+
+.payImg {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 15rpx;
+}
+
+.money_text {
+  margin-left: 100rpx;
+  color: rgb(240, 167, 11);
+}
+
+.onMember {
+  color: rgb(231, 97, 7);
+}
+
+.submit {
+  width: 70px;
+  height: 30px;
+  align-items: center;
+  margin: 30px auto;
+  font-size: 14px;
+  background-color: aquamarine;
+  line-height: 30px;
+}

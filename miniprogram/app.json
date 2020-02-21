@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Grade/Grade",
+    "pages/Teach/Teach",
+    "pages/Video/Video",
+    "pages/Personal/Personal",
+    "pages/Aboutus/Aboutus",
+    "pages/Myproblem/Myproblem",
+    "pages/Member/Member",
+    "pages/onMember/onMember"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#20B2AA",
+    "navigationBarTitleText": "岚 教 育",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./img/bottom001.png",
+        "selectedIconPath": "./img/bottom001.png"
+      },
+      {
+        "pagePath": "pages/Personal/Personal",
+        "text": "个人中心",
+        "iconPath": "./img/bottom003.png",
+        "selectedIconPath": "./img/bottom003.png"
+      }
+    ]
+  }
+}

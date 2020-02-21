@@ -1,0 +1,45 @@
+<!--miniprogram/pages/Video/video.wxml-->
+
+<view class="header">题目讲解</view>
+<view class="video">
+  <video id="myVideo" class="myVideo" src="{{video_url}}" custom-cache="{{false}}">
+  </video>
+  <!--开始封面-->
+  <cover-view class="controls" style="display:{{tab_image}};">
+    <cover-image src="{{default1}}" />
+  </cover-view>
+  <!--播放按钮-->
+  <cover-view class="play" style="display:{{tab_image}};z-index:200;">
+    <cover-image bindtap="bindplay" src="../../img/2/start.png" style="width:140rpx;" />
+  </cover-view>
+</view>
+
+
+<!--视频简介-->
+
+<view class="header">视频简介</view>
+<view class="video_introduce">
+  <text class="video_text">{{video_introduce}}</text>
+</view>
+
+<view class="header">讲解内容</view>
+<view class="video_introduce textImg">
+  <image src="{{textImg}}"></image>
+</view>
+
+<view class="header">教学设计</view>
+<view class="design">
+  <text class="video_text">{{ teachDesign}}</text>
+</view>
+<view class="header">例题</view>
+<view class="video_introduce">
+  <text class="video_text">{{ example}}</text>
+</view>
+<view class="header">习题</view>
+<view class="video_introduce">
+  <text class="video_text">{{xiti}}</text>
+</view>
+<view class="header">拓展资料</view>
+<view class="design">
+  <text class="video_text">{{extand}}</text>
+</view>

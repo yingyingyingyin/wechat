@@ -1,0 +1,8 @@
+<!--miniprogram/pages/Aboutus/Aboutus.wxml-->
+<view class="content">
+<image src="{{img_url}}"></image>
+<view class="con_text">
+<text class="">{{title}}</text>
+{{content}}
+</view>
+</view>

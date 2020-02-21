@@ -1,0 +1,44 @@
+<!--miniprogram/pages/Teach/Teach.wxml-->
+
+<view class="Text_Header">
+  <image src="{{textimgurl}}"></image>
+</view>
+<!--章节选择-->
+<view class='list-msg11'>
+  <!--下拉框  -->
+  <image class="list_icon1" src="../../img/2/tmselect.png"></image>
+  <view class='list-msg2' bindtap='bindShowMsg1'>
+    <text>{{tihuoWay1}}</text>
+    <image style='height:30rpx;width:30rpx;' src='../../img/2/more.png'></image>
+  </view>
+  <!-- 下拉需要显示的列表 -->
+
+  <view class="select_box" wx:if="{{select}}" >
+  <view wx:for="{{zjlist}}">
+    <view class="select_one" bindtap="mySelect1" data-name="{{item.name}}">{{item.name}}</view>
+  </view>
+  </view>
+</view>
+
+
+<!--题目选择-->
+<view class='list-msg22'>
+  <!--下拉框  -->
+  <image class="list_icon1" src="../../img/2/zjselect.png"></image>
+  <view class='list-msg2 list-msg3' bindtap='bindShowMsg2'>
+    <text>{{tihuoWay2}}</text>
+    <image style='height:30rpx;width:30rpx;' src='../../img/2/more.png'></image>
+  </view>
+  <!-- 下拉需要显示的列表 -->
+
+  <view class="select_box" wx:if="{{Tmselect1}}" >
+  <view wx:for="{{tmlist}}">
+    <view class="select_one" bindtap="mySelect2" data-number="{{item.number}}">{{item.number}}</view>
+  </view>
+  </view>
+</view>
+
+<view class="button_footer">
+<button  plain='true' bindtap="Commit">确定</button>
+</view>
+

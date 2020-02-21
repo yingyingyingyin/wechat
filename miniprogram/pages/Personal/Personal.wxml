@@ -1,0 +1,50 @@
+<!--miniprogram/pages/Personal/Personal.wxml-->
+<view class="page">
+  <!--获取昵称和头像-->
+  <view class="header">
+    <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+    <view class="nickname">{{userInfo.nickName}}
+      <!--会员等级图标isMember为真，粉色图标，否则灰色图标-->
+      <view wx:if="{{isMember}}" class="Wicon">
+        <image src="../../img/2/hy.png"></image>
+      </view>
+      <view wx:else class="Wicon">
+        <image src="../../img/2/钻石2.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!--视频和面授-->
+  <view class="content">
+    <view bindtap="OnVideo">
+      <image src="../../img/2/shipin.png"></image>
+      <view>我的视频</view>
+    </view>
+    <view bindtap="Onface">
+      <image src="../../img/2/yuyue.png"></image>
+      <view>预约面授</view>
+    </view>
+  </view>
+
+
+  <!--功能列表-->
+  <view class="plist">
+  <view class="weui-cells weui-cells_after-title" wx:for="{{PList}}" >
+    <navigator wx:if='{{item.url.length>0}}' url="{{item.url}}"class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <view class="weui-cell__hd">
+        <image src="{{item.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">{{item.text1}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{item.text2}}</view>
+    </navigator>
+    <view wx:if='{{item.url.length==0}}' class="weui-cell weui-cell_access" hover-class="weui-cell_active" bindtap="clicked">
+      <view class="weui-cell__hd">
+        <image src="{{item.icon}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">{{item.text1}}</view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{item.text2}}</view>
+    </view>
+  </view>
+
+</view>
+</view>

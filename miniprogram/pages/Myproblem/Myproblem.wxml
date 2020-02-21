@@ -1,0 +1,16 @@
+<!--miniprogram/pages/Myproblem/Myproblem.wxml-->
+<view class="pro_container">
+  <view class="weui-cells__title">请记录下您的问题哦：</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="xinxi">
+                <textarea placeholder='请提供详细的设备故障信息'minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+                    <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+                </textarea>
+                  </view>
+            </view>
+        </view>
+         <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
+        </view>
+</view>

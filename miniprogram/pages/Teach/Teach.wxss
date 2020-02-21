@@ -1,0 +1,89 @@
+/* miniprogram/pages/Teach/Teach.wxss */
+
+.Text_Header image {
+  width: 100%;
+  height: 330rpx;
+}
+
+.list-msg11 {
+  padding: 0 20rpx;
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+}
+
+.list-msg2 {
+  margin-left: 15px;
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0 10rpx;
+  background-color: rgb(17, 240, 147);
+  border-radius: 15rpx;
+  font-size: 16px;
+  z-index: 1
+}
+
+.list-msg3 {
+  background-color: rgb(247, 187, 75);
+}
+
+.list_icon1 {
+  width: 30px;
+  height: 30px;
+}
+
+.select_box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(202, 243, 155);
+  padding: 0 10rpx;
+  width: 80%;
+  position: absolute;
+  top: 100rpx;
+  z-index: 999;
+  animation: myfirst 0s;
+  right:10px;
+  font-size:16px;
+}
+
+@keyframes myfirst {
+  0% {
+    height: 0rpx;
+  }
+  
+    100% {
+    height: 250rpx;
+  }
+  
+  
+}
+
+.select_one {
+  height: 60rpx;
+  line-height: 60rpx;
+  border-bottom: 1px solid #ccc;
+}
+.list-msg22{
+  padding: 0 20rpx;
+  position: relative;
+  display: flex;
+  width: 80%;
+  margin: 30px auto;
+}
+.button_footer{
+  width:70px;
+  height: 40px;
+  margin: 60px auto;
+
+}
+.button_footer button{
+background-color:rgb(120, 209, 18);
+font-size:16px;
+letter-spacing: 2px;
+color:#fff;
+}

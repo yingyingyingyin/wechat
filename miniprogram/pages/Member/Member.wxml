@@ -1,0 +1,23 @@
+<!--miniprogram/pages/Member/Member.wxml会员中心-->
+
+<!--获取昵称和头像-->
+<view class="header">
+  <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+  <view class="nickname">{{userInfo.nickName}}
+    <!--会员等级图标isMember为真，粉色图标，否则灰色图标-->
+    <view wx:if="{{isMember}}" class="Wicon">
+      <image src="../../img/2/hy.png"></image>
+    </view>
+    <view wx:else class="Wicon">
+      <image src="../../img/2/钻石2.png"></image>
+    </view>
+  </view>
+</view>
+<!--VIP会员介绍-->
+<view class="member_content">
+<text>开通会员您可享受：</text>
+  <span wx:for="{{memberData}}">{{item.text}}</span>
+</view>
+ <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="showMember">开通会员</button>
+  </view>

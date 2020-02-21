@@ -1,0 +1,68 @@
+/* miniprogram/pages/Video/video.wxss */
+
+.header {
+  width: 100px;
+  height: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: rgb(241, 163, 19);
+  color: #fff;
+  text-align: center;
+  border: 1px solid gainsboro;
+  border-radius: 15px 0 15px 0;
+  line-height: 30px;
+}
+
+.video {
+  margin-top: 20px;
+}
+
+.myVideo {
+  width: 100%;
+  height: calc(9 * 750rpx / 16);
+  background-color: #fff;
+}
+
+.controls {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  height: calc(9 * 750rpx / 16);
+  margin-top: -430rpx;
+}
+
+.play {
+  position: absolute;
+  left: 50%;
+  margin-top: -300rpx;
+  margin-left: -80rpx;
+}
+
+.video_introduce {
+  width: 85%;
+  height: 130px;
+  border: 0.5px solid gainsboro;
+  box-shadow: 0 0 3px 3px gainsboro;
+  margin: 20px auto;
+  padding: 5px;
+}
+.design{
+   width: 85%;
+  height: 280px;
+  border: 0.5px solid gainsboro;
+  box-shadow: 0 0 3px 3px gainsboro;
+  margin: 20px auto;
+  padding: 5px;
+}
+.video_text {
+  font-size: 14px;
+}
+
+.textImg {
+  height: 200px;
+}
+
+.textImg image {
+  width: 100%;
+  height: 100%;
+}

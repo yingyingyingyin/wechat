@@ -1,0 +1,43 @@
+/* miniprogram/pages/Personal/Personal.wxss */
+.page{
+  padding:10rpx;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.nickname {
+  color: red;
+  display: flex;
+  letter-spacing: 3px;
+}
+
+.Wicon image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 5px;
+}
+
+.content {
+  display: flex;
+  justify-content:space-around;
+  font-size:14px;
+  margin-top:60rpx;
+  text-align: center
+}
+.content image{
+  width:100rpx;
+  height:100rpx;
+}
+.plist{
+  margin-top:40rpx;
+}

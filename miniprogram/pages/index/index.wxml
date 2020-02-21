@@ -1,0 +1,124 @@
+<!--index.wxml-->
+<view wx:if="{{isHide}}">
+  <view wx:if="{{canIUse}}">
+    <view class='header'>
+      <image src='../../img/2/wxlogin.png'></image>
+    </view>
+
+    <view class='content'>
+      <view>申请获取以下权限</view>
+      <text>获得你的公开信息(昵称，头像等)</text>
+    </view>
+
+    <button class='bottom' type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+      授权登录
+    </button>
+  </view>
+  <view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+  <view>
+
+
+    <!--搜索框:-->
+    <view class="page">
+      <view class="page__bd">
+        <view class="weui-search-bar">
+          <view class="weui-search-bar__form">
+            <view class="weui-search-bar__box">
+              <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+              <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+              <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                <icon type="clear" size="14"></icon>
+              </view>
+            </view>
+            <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+              <icon class="weui-icon-search" type="search" size="14"></icon>
+              <view class="weui-search-bar__text">请输入您的搜索</view>
+            </label>
+          </view>
+          <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+          <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">
+              <view>实时搜索文本</view>
+            </view>
+          </navigator>
+          <navigator url="" class="weui-cell" hover-class="weui-cell_active">
+            <view class="weui-cell__bd">
+              <view>实时搜索文本</view>
+            </view>
+          </navigator>
+
+
+        </view>
+      </view>
+    </view>
+    <!--轮播图:-->
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <block wx:for="{{movies}}" wx:for-index="index">
+        <swiper-item>
+          <image src="{{item.url}}" class="slide-image" mode="aspectFill" />
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <!--年级列表:-->
+    <view class="subjectImg">
+      <image src="../../img/share.png"></image>
+      <text class="subjectText">年级列表</text>
+    </view>
+    <view class="Grade_select">
+      <view class="One_Two">
+        <view class="one" bindtap="Grade_onclick" data-gradenums="1">
+          <view class="Grade_img">
+            <image src="../../img/2/student_1.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">一年级</view>
+        </view>
+        <view class="one" bindtap="Grade_onclick" data-gradenums="2">
+          <view class="Grade_img">
+            <image src="../../img/2/student_2.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">二年级</view>
+        </view>
+
+      </view>
+      <view class="One_Two">
+        <view class="one" bindtap="Grade_onclick" data-gradenums="3">
+          <view class="Grade_img">
+            <image src="../../img/2/student_3.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">三年级</view>
+        </view>
+        <view class="one" bindtap="Grade_onclick" data-gradenums="4">
+          <view class="Grade_img">
+            <image src="../../img/2/student_4.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">四年级</view>
+        </view>
+
+      </view>
+      <view class="One_Two">
+        <view class="one" bindtap="Grade_onclick" data-gradenums="5">
+          <view class="Grade_img">
+            <image src="../../img/2/student_5.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">五年级</view>
+        </view>
+        <view class="one" bindtap="Grade_onclick" data-gradenums="6">
+          <view class="Grade_img">
+            <image src="../../img/2/student_6.png" class="Grade_img"></image>
+          </view>
+          <view class="Grade_text">六年级</view>
+        </view>
+
+      </view>
+
+    </view>
+
+
+  </view>
+</view>
